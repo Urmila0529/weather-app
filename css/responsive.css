@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+    .forecast-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .forecast-day {
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}
+
+

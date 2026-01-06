@@ -1,0 +1,107 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+.controls button {
+    margin: 4px;
+}
+
+.weather-card {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+#alerts {
+    margin: 15px;
+}
+
+.alert-box {
+    background: #ffcccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+}
+
+.forecast-day {
+    background: white;
+    padding: 10px;
+    margin: 5px;
+   
+    border-radius: 10px;
+}
+.forecast-day small {
+    color: gray;
+    font-size: 12px;
+}
+
+#map {
+    height: 300px;
+    margin: 20px;
+}
+
+#favorites {
+    background: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+/* 🌙 Dark Mode */
+body.dark {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark header,
+body.dark footer {
+    background: #1e1e1e;
+}
+
+body.dark .weather-card,
+body.dark .forecast-day,
+body.dark #favorites {
+    background: #1f1f1f;
+    color: white;
+}
+
+body.dark button {
+    background: #333;
+    color: white;
+}
+/* 🌦 Weather Transition Animations */
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
